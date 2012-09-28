@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Top Side</title>
+<meta name="author" content="Brad Birdsall">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />  
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+
+<button id='topside-trigger' style='margin:20px'>Trigger TopSide</button>
+
+<div class='topSide' id='topside'>
+  <div class='topSide-container'>
+    <div class='topSide-content'>
+      <ul class='sample'>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <a href='#' class='topSide-close'></a>
+</div>
+
+
+
+<script src="TopSide.js"></script>
+<script>
+
+var myTopSide = new TopSide(
+  document.getElementById('topside'), 
+  document.getElementById('topside-trigger'),
+  { 
+    topOffset: 100 
+  }
+);
+
+</script>
+
+</body>
+</html>
